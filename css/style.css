@@ -1,0 +1,575 @@
+ @import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Cairo:wght@200..1000&family=Playwrite+DK+Loopet:wght@100..400&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+
+
+ :root {
+   --mainColor: #8a9cc2b9;
+   --secondaryColor: rgb(179, 136, 136);
+ }
+
+ .top-header {
+   background-color: var(--mainColor);
+
+ }
+
+ body {
+   font-family: cairo !important;
+
+
+ }
+
+ a {
+   text-decoration: none !important;
+   color: black !important;
+ }
+
+ .left-header a {
+   margin-left: 20px;
+   border-right: 1px solid black;
+   padding-right: 15px;
+   transition: all 0.3s;
+
+ }
+
+ .left-header a:hover {
+   color: #D3D3D3 !important;
+ }
+
+ /* الوضع النهاري (الافتراضي) */
+ body {
+   background-color: white;
+   color: black;
+   transition: 0.3s;
+ }
+
+ /* الوضع الليلي */
+ body.dark-mode {
+   background-color: #121212;
+   color: white;
+ }
+
+ /* تنسيق الزر */
+ #theme-toggle {
+   position: fixed;
+   top: 20px;
+   left: 20px;
+   background: none;
+   border: none;
+   font-size: 24px;
+   cursor: pointer;
+   align-items: center;
+
+ }
+
+ .menu-icon {
+   border-radius: 3px !important;
+   box-shadow: none !important;
+ }
+
+ .nav-link {
+   font-weight: bold !important;
+ }
+
+ .button-header {
+   box-shadow: 3px 3px 3px rgba(13, 30, 124, 0.534);
+ }
+
+ .log img {
+   border-radius: 70% !important;
+   box-shadow: 3px 3px 3px rgba(6, 18, 87, 0.884);
+ }
+
+
+
+ .categories {
+   margin-top: 50px;
+ }
+
+ .cat img {
+   transition: all 0.3s;
+ }
+
+ .cat:hover img {
+   scale: 1.1;
+ }
+
+ .section-title {
+   margin-bottom: 30px;
+   color: #67789e;
+   font-size: 40px;
+   font-weight: bold;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ }
+
+ .buut:hover {
+   background-color: #8a9cc2;
+ }
+
+ .categories {
+   background-color: #12121215;
+ }
+
+ /* start products */
+
+ .products {
+   margin-top: 79px;
+ }
+
+ .btnn:hover {
+   background-color: #67799e;
+   color: white;
+
+ }
+
+ .btnn {
+   width: 100%;
+ }
+
+ .product-info {
+   padding: 10px;
+ }
+
+ .product-info h3 {
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   font-size: 22px;
+   font-weight: bold;
+ }
+
+ .product-info p {
+   font-size: 13px;
+ }
+
+ .stars i {
+   color: rgb(207, 207, 9);
+   font-size: 20px;
+ }
+
+ .price :first-child {
+   color: #67789e;
+   margin-left: 20px;
+   font-weight: 600;
+
+ }
+
+ .price :last-child {
+   text-decoration: line-through;
+
+ }
+
+ .quick-icons {
+   position: absolute;
+   background-color: transparent;
+   right: -45px;
+   top: 15px;
+   height: 150px;
+   width: 40px;
+   border-top-left-radius: 10px;
+   border-bottom-left-radius: 10px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
+   transition: 0.3s;
+   border: 1px solid #939fbb;
+ }
+
+ .quick-icons i {
+   font-size: 20px;
+ }
+
+ .product:hover .quick-icons {
+   right: 0;
+
+ }
+
+
+ .carousel-inner img {
+   height: 600px;
+   /* غيّر القيمة حسب الارتفاع اللي بدك ياه */
+   object-fit: cover;
+   /* هذا بيقص الصورة من الأطراف بدون تشويه */
+ }
+
+
+ /* end start products */
+ .nex-products {
+   background-color: #939fbb2c;
+   padding-top: 70px;
+   margin-bottom: 70px;
+ }
+
+ .btns-quantity button {
+   border: 1px solid #ccc;
+
+ }
+
+ .btns-quantity button:hover {
+   border: 1px solid rgb(142, 144, 175);
+
+ }
+
+ .btns-quantity button:active {
+   border: 1px solid rgb(109, 118, 248) !important;
+
+ }
+
+ @media(max-width: 768px) {
+   .add-btn button {
+     font-size: 13px !important;
+   }
+ }
+
+ .mini-card {
+   background-color: #b3bac9bb;
+   padding: 10px;
+   margin: 5px;
+   border-radius: 5px;
+
+ }
+
+ .mini-card img {
+   border-radius: 10px;
+ }
+
+ .btns-quantity-mini button {
+   background-color: white !important;
+   border: 1px solid rgba(29, 83, 153, 0.39);
+ }
+
+ .btns-quantity-mini button:hover {
+   border: 1px solid rgba(76, 4, 158, 0.781);
+ }
+
+ .row-mini-card {
+   padding-bottom: 20px;
+   border-bottom: 2px dashed rgb(17, 66, 199);
+
+ }
+
+ .btn-indigo-light {
+   background-color: #488eaf;
+   color: white;
+
+ }
+
+ .btn-indigo-light:hover {
+   background-color: #c7d2fe;
+   border: 1px solid rgba(20, 19, 20, 0.781);
+ }
+
+ .mmm {
+   background-color: #a19cbd23;
+ }
+
+
+
+
+ .btn-danger:hover {
+   background-color: #fecdd3;
+   color: black;
+ }
+
+ .mini-login {
+   border: 1px dashed #c7d2fe;
+   padding: 10px;
+   border-radius: 5px;
+ }
+
+ .foor {
+   background-color: #488eaf13 !important;
+   /* سماوي مثل لون بوتستراب */
+   box-shadow: 0 0 0 0.2rem rgba(55, 99, 165, 0.486);
+   /* تأثير ظل خفيف */
+   outline: none;
+ }
+
+ .btt {
+   background-color: #337a9b9c;
+ }
+
+ .btt:hover {
+   background-color: #337a9b5b;
+   color: black;
+ }
+
+ .week-products {
+   background-color: #c3dbe69a;
+   padding-top: 50px;
+ }
+
+ .product-sm {
+   background-color: #f8f7f79f;
+   padding: 5px;
+   border-radius: 5%;
+   border: 1px dashed #337a9b81;
+   overflow: hidden !important;
+
+
+ }
+
+ .product-sm:hover img {
+   rotate: 18deg;
+ }
+
+ .product-sm img {
+   border-radius: 50%;
+   box-shadow: 3px 3px 3px rgba(6, 18, 87, 0.884);
+   width: 30%;
+   transition: all 0.3s;
+ }
+
+ .product-sm .product-info :first-child {
+   font-size: 18px;
+   font-weight: bold;
+
+ }
+
+ .product-sm .product-info :last-child {
+   font-weight: bold;
+   color: rgb(23, 96, 165);
+
+ }
+
+ .mini-title {
+   font-size: 20px;
+   font-weight: bold;
+   margin-bottom: 25px;
+ }
+
+ .card {
+   background-color: rgba(255, 255, 255, 0.795);
+ }
+
+ /* start ads */
+ .section-title {
+   padding-top: 20px;
+   color: #365f94;
+ }
+
+ .ad {
+   position: relative;
+   overflow: hidden;
+   border-radius: 10px !important;
+   cursor: pointer;
+   margin-bottom: 30px;
+
+
+ }
+
+ .ads {
+   background-color: #19385c0a;
+   padding-top: 50px;
+   padding-bottom: 50px;
+
+ }
+
+ .ad img {
+   transition: 0.3s;
+
+ }
+
+ .ad:hover img {
+   scale: 1.1;
+
+
+ }
+
+ .ad .overlay {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   background-color: #050e2246;
+   z-index: 100 !important;
+
+ }
+
+ .ad .ad-info {
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   /* العناصر بلوسط */
+   text-align: center;
+   z-index: 101 !important;
+ }
+
+ .ad .ad-info h3 {
+   color: white;
+   font-size: 22px;
+   font-weight: bold;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+ }
+
+ .ad .ad-info p {
+   color: rgba(255, 255, 255, 0.884);
+ }
+
+ /* start footer */
+ footer {
+   background-color: rgba(0, 0, 0, 0.678);
+   padding-top: 30px;
+   margin-top: 50px;
+   background-image:url('../imags/ss.webp') ;
+   background-size:cover ;
+   background-position: center;
+   background-repeat: no-repeat;
+   border-top:2px solid var(--mainColor) ;
+ }
+
+ footer h3 {
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   font-weight: bold;
+   font-size: 22px;
+   
+ }
+ .f1 p{
+  color: rgba(151, 180, 204, 0.822);
+   font-size: 15px;
+    width: 90%; 
+    margin-top: 20px;
+    line-height: 1.8;
+ }
+
+ footer a {
+   color: rgba(255, 255, 255, 0.623) !important;
+ }
+  
+ .f4 p {
+   color: rgba(151, 180, 204, 0.822);
+   font-size: 15px;
+    width: 90%; 
+    margin-top: 20px;
+    line-height: 1.8;
+ }
+ footer .row:first-child{
+  border-bottom:1px dashed var(--mainColor) ;
+  padding-bottom: 30px;
+ }
+ footer .navbar-nav li{
+  margin-bottom:10px ;
+ }
+
+
+ /* end srart footer */
+
+
+/* product */
+
+ .carousel-imges{
+  position: absolute !important;
+  bottom: 100px !important;
+  display: flex !important;
+  flex-direction:column !important ;
+  right: -140px;
+  gap: 10px;
+
+  
+ }
+ .img-slider{
+  width: 100px !important;
+  height: 100px !important;
+  border-radius: 50%;
+  border: 1px solid rgb(39, 67, 119) !important;
+ }
+ .review-title{
+  font-size: 20px;
+  font-weight: bold;
+ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ color: #17427a;
+ }
+ .review-section{
+  border: 1px solid #234a7e23;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 7px 7px 7px #244f869d;
+ }
+
+ /* start bunner */
+ .bunner{
+  background-color: black;
+  padding-bottom:  50px;
+  padding-top:  50px;
+  border-bottom: 2px solid var(--mainColor);
+
+
+ }
+ .category-title{
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 35px;
+  text-align: center;
+   
+ }
+ /* end start bunner */
+
+
+
+ .filter-section{
+  background-color: #acdcf11e;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+ }
+ .filter-title{
+  
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+   
+
+ }
+ .cart-title{
+  font-size: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+  color: #316a99;
+
+ }
+ .summery{
+ background-color: #acdcf11e;
+ padding: 15px;
+ border-radius: 10px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ 
+ }
+ .cart-item{
+  border-bottom: 1px dashed #acdcf186 ;
+  margin-bottom: 15px;
+ }
+  
+
+
+
+ .user-info{
+  background-color: #d6e5ec25;
+  padding: 15px;
+  border-radius: 10px ;
+   box-shadow: 7px 7px 7px #244f869d;
+ }
+ .total-price{
+  font-size: 20px;
+  font-weight: bold;
+  color: #f84222;
+ }
+ .master-card{
+  background-color: #eee;
+  padding: 10px;
+  border-radius: 10px;
+
+ }
+ .master-card img{
+  top: 50%;
+  left: 15px;
+  width: 35%;
+
+ }
+
+
+ .iti{
+  width: 100% !important;
+ }
+ .iti__country-list{
+  position: absolute !important;
+  left: 0;
+ }
+ 
