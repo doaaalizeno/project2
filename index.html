@@ -261,446 +261,742 @@
   </section>
 
   <!-- start products -->
-  <section class="products">
-    <h2 class="text-center section-title"> أحدث المنتجات</h2>
+ <section class="products">
+
+    <h2 class="text-center section-title">أحدث المنتجات</h2>
+
     <div class="container-fluid">
 
+        <div class="btn-group mb-3 w-100 filter-button-group"
+             role="group"
+             aria-label="Basic outlined example">
+
+            <button data-filter="*" type="button"
+                    class="btn btn-outline-secondary btnn">
+                الكل
+            </button>
+
+            <button data-filter=".clothes" type="button"
+                    class="btn btn-outline-secondary btnn">
+                ملابس
+            </button>
+
+            <button data-filter=".Jewelry" type="button"
+                    class="btn btn-outline-secondary btnn">
+                مجوهرات وعطورات
+            </button>
+
+            <button data-filter=".Bags" type="button"
+                    class="btn btn-outline-secondary btnn">
+                حقائب وأحذية
+            </button>
 
-
-      <div class="btn-group mb-3 w-100 filter-button-group" role="group" aria-label="Basic outlined example">
-        <button data-filter="*" type="button" class="btn btn-outline-secondary btnn"> الكل</button>
-        <button data-filter=".clothes" type="button" class="btn btn-outline-secondary btnn"> ملابس</button>
-        <button data-filter=".Jewelry" type="button" class="btn btn-outline-secondary btnn "> مجوهرات وعطورات</button>
-        <button data-filter=".Bags" type="button" class="btn btn-outline-secondary btnn"> حقائي واحذية</button>
-      </div>
-
-
-
-      <div class="row row-cols-2 row-cols-md-6 all-products">
-        <div class="col product mb-3 clothes">
-          <div class="card overflow-hidden">
-            <div class="quick-icons">
-              <a href="#quick-product" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
-              <a href=""><i class="fa-regular fa-heart"></i></a>
-              <a href=""><i class="fa-solid fa-code-compare"></i></a>
-
-            </div>
-            <img height="200px" src="imags/55.webp" alt="product">
-            <div class="product-info">
-              <h3>يومي المفضل</h3>
-              <p> إختاري قطعة مريحة وسهلة التنسيق، تناسب كل يوم وتزيده أناقة وراحة.</p>
-
-
-              <div class="stars mb-2">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-
-              <div class="price mb-2">
-                <span>السعر 50$</span>
-                <span> 100$ </span>
-              </div>
-
-              <button onclick="alert('تم اضافة المنتح للسلة')" type="button" class="btn btn-outline-secondary btnn"
-                style="white-space: nowrap;">
-                إضافة إلى السلة
-              </button>
-            </div>
-
-          </div>
-        </div>
-        <div class="col product mb-3  mb-2 Jewelry ">
-          <div class="card overflow-hidden">
-            <div class="quick-icons">
-              <a href="#quick-product" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
-              <a href=""><i class="fa-regular fa-heart"></i></a>
-              <a href=""><i class="fa-solid fa-code-compare"></i></a>
-
-            </div>
-            <img height="200px" src="imags/g.jpeg" alt="product">
-            <div class="product-info">
-              <h3>سرّ الجوهرة</h3>
-              <p>قطعة فريدة تخبّئ في تفاصيلها سرّ الأناقة والتألّق، مصممة لتكون لمستك المميزة.</p>
-
-              <div class="stars mb-2">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-
-              <div class="price mb-2">
-                <span>السعر 50$</span>
-                <span> 100$ </span>
-              </div>
-
-              <button onclick="alert('تم اضافة المنتح للسلة')" type="button" class="btn btn-outline-secondary btnn"
-                style="white-space: nowrap;">
-                إضافة إلى السلة
-              </button>
-            </div>
-
-          </div>
-        </div>
-        <div class="col product mb-3 clothes">
-          <div class="card overflow-hidden">
-            <div class="quick-icons">
-              <a href="#quick-product" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
-              <a href=""><i class="fa-regular fa-heart"></i></a>
-              <a href=""><i class="fa-solid fa-code-compare"></i></a>
-
-            </div>
-            <img height="200px" src="imags/99.webp" alt="product">
-            <div class="product-info">
-              <h3>طقم وأناقة</h3>
-              <p>تناسق مثالي بأقل مجهود، طقم جاهز يضمن لك لمسة أناقة بكل تفاصيله.</p>
-
-
-              <div class="stars mb-2">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-
-              <div class="price mb-2">
-                <span>السعر 50$</span>
-                <span> 100$ </span>
-              </div>
-
-              <button onclick="alert('تم اضافة المنتح للسلة')" type="button" class="btn btn-outline-secondary btnn"
-                style="white-space: nowrap;">
-                إضافة إلى السلة
-              </button>
-            </div>
-
-          </div>
-        </div>
-        <div class="col product mb-3 clothes">
-          <div class="card overflow-hidden">
-            <div class="quick-icons">
-              <a href="#quick-product" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
-              <a href=""><i class="fa-regular fa-heart"></i></a>
-              <a href=""><i class="fa-solid fa-code-compare"></i></a>
-
-            </div>
-            <img height="200px" src="imags/112.webp" alt="product">
-            <div class="product-info">
-              <h3>همسة ليل</h3>
-              <p>راحة ونعومة تهمس لجسدك قبل النوم، بجاما تنعمين فيها بهدوء المساء.</p>
-
-
-              <div class="stars mb-2">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-
-              <div class="price mb-2">
-                <span>السعر 50$</span>
-                <span> 100$ </span>
-              </div>
-
-              <button onclick="alert('تم اضافة المنتح للسلة')" type="button" class="btn btn-outline-secondary btnn"
-                style="white-space: nowrap;">
-                إضافة إلى السلة
-              </button>
-            </div>
-
-          </div>
-        </div>
-        <div class="col product mb-3 Bags">
-          <div class="card overflow-hidden">
-            <div class="quick-icons">
-              <a href="#quick-product" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
-              <a href=""><i class="fa-regular fa-heart"></i></a>
-              <a href=""><i class="fa-solid fa-code-compare"></i></a>
-
-            </div>
-            <img height="200px" src="imags/4444.webp" alt="product">
-            <div class="product-info">
-              <h3>حقيبة أسراري</h3>
-              <p>تصميم أنيق يحمل كل ما تحبين، لأن أناقتك تبدأ من التفاصيل التي لا يراها أحد.</p>
-
-
-              <div class="stars mb-2">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-
-              <div class="price mb-2">
-                <span>السعر 50$</span>
-                <span> 100$ </span>
-              </div>
-
-              <button onclick="alert('تم اضافة المنتح للسلة')" type="button" class="btn btn-outline-secondary btnn"
-                style="white-space: nowrap;">
-                إضافة إلى السلة
-              </button>
-            </div>
-
-          </div>
-        </div>
-        <div class="col product mb-3 Jewelry ">
-          <div class="card overflow-hidden">
-            <div class="quick-icons">
-              <a href="#quick-product" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
-              <a href=""><i class="fa-regular fa-heart"></i></a>
-              <a href=""><i class="fa-solid fa-code-compare"></i></a>
-
-            </div>
-            <img height="200px" src="imags/19.webp" alt="product">
-            <div class="product-info">
-              <h3>قطرة ورد</h3>
-              <p>نفحة أنثوية تنساب برقة، تجمع بين نعومة الزهر وفخامة العطر في كل قطرة.</p>
-
-
-              <div class="stars mb-2">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-
-              <div class="price mb-2">
-                <span>السعر 50$</span>
-                <span> 100$ </span>
-              </div>
-
-              <button onclick="alert('تم اضافة المنتح للسلة')" type="button" class="btn btn-outline-secondary btnn"
-                style="white-space: nowrap;">
-                إضافة إلى السلة
-              </button>
-            </div>
-
-          </div>
-        </div>
-        <div class="col product mb-3 Jewelry ">
-          <div class="card overflow-hidden">
-            <div class="quick-icons">
-              <a href="#quick-product" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
-              <a href=""><i class="fa-regular fa-heart"></i></a>
-              <a href=""><i class="fa-solid fa-code-compare"></i></a>
-
-            </div>
-            <img height="200px" src="imags/999.webp" alt="product">
-            <div class="product-info">
-              <h3> أنوثة ناعمة </h3>
-              <p>اكتشفي من عنا أحدث التصاميم المختارة بعناية، لتمنحي إطلالتك لمسة جديدة من الأناقة والتميّز.</p>
-
-
-              <div class="stars mb-2">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-
-              <div class="price mb-2">
-                <span>السعر 50$</span>
-                <span> 100$ </span>
-              </div>
-
-              <button onclick="alert('تم اضافة المنتح للسلة')" type="button" class="btn btn-outline-secondary btnn"
-                style="white-space: nowrap;">
-                إضافة إلى السلة
-              </button>
-            </div>
-
-          </div>
-        </div>
-        <div class="col product mb-3  clothes ">
-          <div class="card overflow-hidden">
-            <div class="quick-icons">
-              <a href="#quick-product" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
-              <a href=""><i class="fa-regular fa-heart"></i></a>
-              <a href=""><i class="fa-solid fa-code-compare"></i></a>
-
-            </div>
-            <img height="200px" src="imags/w.jpg" alt="product">
-            <div class="product-info">
-              <h3>كلاسيك مود</h3>
-              <p>لمسة من الرقي الكلاسيكي بتصميم عصري أنيق، قطعة تجمع بين البساطة والفخامة .</p>
-
-
-              <div class="stars mb-2">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-
-              <div class="price mb-2">
-                <span>السعر 50$</span>
-                <span> 100$ </span>
-              </div>
-
-              <button onclick="alert('تم اضافة المنتح للسلة')" type="button" class="btn btn-outline-secondary btnn"
-                style="white-space: nowrap;">
-                إضافة إلى السلة
-              </button>
-            </div>
-
-          </div>
-        </div>
-        <div class="col product mb-3 Bags">
-          <div class="card overflow-hidden">
-            <div class="quick-icons">
-              <a href="#quick-product" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
-              <a href=""><i class="fa-regular fa-heart"></i></a>
-              <a href=""><i class="fa-solid fa-code-compare"></i></a>
-
-            </div>
-            <img height="200px" src="imags/k.webp" alt="product">
-            <div class="product-info">
-              <h3>فخامة القدم</h3>
-              <p>تصميم يجمع بين الراحة والرقي، ليمنح قدميك لمسة من الأناقة في كل مناسبة.</p>
-
-
-              <div class="stars mb-2">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-
-              <div class="price mb-2">
-                <span>السعر 50$</span>
-                <span> 100$ </span>
-              </div>
-
-              <button onclick="alert('تم اضافة المنتح للسلة')" type="button" class="btn btn-outline-secondary btnn"
-                style="white-space: nowrap;">
-                إضافة إلى السلة
-              </button>
-            </div>
-
-          </div>
-        </div>
-        <div class="col product mb-3 clothes">
-          <div class="card overflow-hidden">
-            <div class="quick-icons">
-              <a href="#quick-product" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
-              <a href=""><i class="fa-regular fa-heart"></i></a>
-              <a href=""><i class="fa-solid fa-code-compare"></i></a>
-
-            </div>
-            <img height="200px" src="imags/kk.webp" alt="product">
-            <div class="product-info">
-              <h3>ستايل سوشيال</h3>
-              <p>لإطلالة تخطف الأنظار وتواكب الترند، خلي أناقتك تحكي عنك وين ما تكون.</p>
-
-              <div class="stars mb-2">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-
-              <div class="price mb-2">
-                <span>السعر 50$</span>
-                <span> 100$ </span>
-              </div>
-
-              <button onclick="alert('تم اضافة المنتح للسلة')" type="button" class="btn btn-outline-secondary btnn"
-                style="white-space: nowrap;">
-                إضافة إلى السلة
-              </button>
-            </div>
-
-          </div>
-        </div>
-        <div class="col product mb-3 Bags">
-          <div class="card overflow-hidden">
-            <div class="quick-icons">
-              <a href="#quick-product" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
-              <a href=""><i class="fa-regular fa-heart"></i></a>
-              <a href=""><i class="fa-solid fa-code-compare"></i></a>
-
-            </div>
-            <img height="200px" src="imags/kkkkk.webp" alt="product">
-            <div class="product-info">
-              <h3>خُطى واثقة</h3>
-              <p>صُمم ليمنحك الثبات والأناقة في كل خطوة، لأن الثقة تبدأ من الأرض التي تمشين عليها.</p>
-
-
-              <div class="stars mb-2">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-
-              <div class="price mb-2">
-                <span>السعر 50$</span>
-                <span> 100$ </span>
-              </div>
-
-              <button onclick="alert('تم اضافة المنتح للسلة')" type="button" class="btn btn-outline-secondary btnn"
-                style="white-space: nowrap;">
-                إضافة إلى السلة
-              </button>
-            </div>
-
-          </div>
-        </div>
-        <div class="col product mb-3 Jewelry">
-          <div class="card overflow-hidden">
-            <div class="quick-icons">
-              <a href="#quick-product" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
-              <a href=""><i class="fa-regular fa-heart"></i></a>
-              <a href=""><i class="fa-solid fa-code-compare"></i></a>
-
-            </div>
-            <img height="200px" src="imags/15.webp" alt="product">
-            <div class="product-info">
-              <h3>ليل وعود</h3>
-              <p>عطر شرقي دافئ، يأسر الحواس بنفحات العود الفاخر ولمسة من غموض المساء.</p>
-
-
-              <div class="stars mb-2">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-
-              <div class="price mb-2">
-                <span>السعر 50$</span>
-                <span> 100$ </span>
-              </div>
-
-              <button onclick="alert('تم اضافة المنتح للسلة')" type="button" class="btn btn-outline-secondary btnn"
-                style="white-space: nowrap;">
-                إضافة إلى السلة
-              </button>
-            </div>
-
-
-
-          </div>
         </div>
 
-      </div>
+
+        <div class="row row-cols-2 row-cols-md-6 all-products">
+
+
+            <!-- المنتج 1 -->
+            <div class="col product mb-3 clothes">
+
+                <div class="card overflow-hidden">
+
+                    <div class="quick-icons">
+                        <a href="#quick-product" data-bs-toggle="modal">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+
+                        <a href="">
+                            <i class="fa-regular fa-heart"></i>
+                        </a>
+
+                        <a href="">
+                            <i class="fa-solid fa-code-compare"></i>
+                        </a>
+                    </div>
+
+                    <img src="imags/55.webp" alt="product">
+
+                    <div class="product-info">
+
+                        <div class="product-text">
+                            <h3>يومي المفضل</h3>
+
+                            <p>
+                                إختاري قطعة مريحة وسهلة التنسيق،
+                                تناسب كل يوم وتزيده أناقة وراحة.
+                            </p>
+                        </div>
+
+                        <div class="stars mb-2">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+
+                        <div class="price mb-2">
+                            <span>السعر 50$</span>
+                            <span>100$</span>
+                        </div>
+
+                        <button onclick="alert('تم اضافة المنتح للسلة')"
+                                type="button"
+                                class="btn btn-outline-secondary btnn">
+                            إضافة إلى السلة
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- المنتج 2 -->
+            <div class="col product mb-3 Jewelry">
+
+                <div class="card overflow-hidden">
+
+                    <div class="quick-icons">
+                        <a href="#quick-product" data-bs-toggle="modal">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+
+                        <a href="">
+                            <i class="fa-regular fa-heart"></i>
+                        </a>
+
+                        <a href="">
+                            <i class="fa-solid fa-code-compare"></i>
+                        </a>
+                    </div>
+
+                    <img src="imags/g.jpeg" alt="product">
+
+                    <div class="product-info">
+
+                        <div class="product-text">
+                            <h3>سرّ الجوهرة</h3>
+
+                            <p>
+                                قطعة فريدة تخبّئ في تفاصيلها سرّ الأناقة
+                                والتألّق، مصممة لتكون لمستك المميزة.
+                            </p>
+                        </div>
+
+                        <div class="stars mb-2">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+
+                        <div class="price mb-2">
+                            <span>السعر 50$</span>
+                            <span>100$</span>
+                        </div>
+
+                        <button onclick="alert('تم اضافة المنتح للسلة')"
+                                type="button"
+                                class="btn btn-outline-secondary btnn">
+                            إضافة إلى السلة
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- المنتج 3 -->
+            <div class="col product mb-3 clothes">
+
+                <div class="card overflow-hidden">
+
+                    <div class="quick-icons">
+                        <a href="#quick-product" data-bs-toggle="modal">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+
+                        <a href="">
+                            <i class="fa-regular fa-heart"></i>
+                        </a>
+
+                        <a href="">
+                            <i class="fa-solid fa-code-compare"></i>
+                        </a>
+                    </div>
+
+                    <img src="imags/99.webp" alt="product">
+
+                    <div class="product-info">
+
+                        <div class="product-text">
+                            <h3>طقم وأناقة</h3>
+
+                            <p>
+                                تناسق مثالي بأقل مجهود، طقم جاهز يضمن لك
+                                لمسة أناقة بكل تفاصيله.
+                            </p>
+                        </div>
+
+                        <div class="stars mb-2">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+
+                        <div class="price mb-2">
+                            <span>السعر 50$</span>
+                            <span>100$</span>
+                        </div>
+
+                        <button onclick="alert('تم اضافة المنتح للسلة')"
+                                type="button"
+                                class="btn btn-outline-secondary btnn">
+                            إضافة إلى السلة
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- المنتج 4 -->
+            <div class="col product mb-3 clothes">
+
+                <div class="card overflow-hidden">
+
+                    <div class="quick-icons">
+                        <a href="#quick-product" data-bs-toggle="modal">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+
+                        <a href="">
+                            <i class="fa-regular fa-heart"></i>
+                        </a>
+
+                        <a href="">
+                            <i class="fa-solid fa-code-compare"></i>
+                        </a>
+                    </div>
+
+                    <img src="imags/112.webp" alt="product">
+
+                    <div class="product-info">
+
+                        <div class="product-text">
+                            <h3>همسة ليل</h3>
+
+                            <p>
+                                راحة ونعومة تهمس لجسدك قبل النوم،
+                                بجاما تنعمين فيها بهدوء المساء.
+                            </p>
+                        </div>
+
+                        <div class="stars mb-2">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+
+                        <div class="price mb-2">
+                            <span>السعر 50$</span>
+                            <span>100$</span>
+                        </div>
+
+                        <button onclick="alert('تم اضافة المنتح للسلة')"
+                                type="button"
+                                class="btn btn-outline-secondary btnn">
+                            إضافة إلى السلة
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- المنتج 5 -->
+            <div class="col product mb-3 Bags">
+
+                <div class="card overflow-hidden">
+
+                    <div class="quick-icons">
+                        <a href="#quick-product" data-bs-toggle="modal">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+
+                        <a href="">
+                            <i class="fa-regular fa-heart"></i>
+                        </a>
+
+                        <a href="">
+                            <i class="fa-solid fa-code-compare"></i>
+                        </a>
+                    </div>
+
+                    <img src="imags/4444.webp" alt="product">
+
+                    <div class="product-info">
+
+                        <div class="product-text">
+                            <h3>حقيبة أسراري</h3>
+
+                            <p>
+                                تصميم أنيق يحمل كل ما تحبين،
+                                لأن أناقتك تبدأ من التفاصيل التي لا يراها أحد.
+                            </p>
+                        </div>
+
+                        <div class="stars mb-2">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+
+                        <div class="price mb-2">
+                            <span>السعر 50$</span>
+                            <span>100$</span>
+                        </div>
+
+                        <button onclick="alert('تم اضافة المنتح للسلة')"
+                                type="button"
+                                class="btn btn-outline-secondary btnn">
+                            إضافة إلى السلة
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- المنتج 6 -->
+            <div class="col product mb-3 Jewelry">
+
+                <div class="card overflow-hidden">
+
+                    <div class="quick-icons">
+                        <a href="#quick-product" data-bs-toggle="modal">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+
+                        <a href="">
+                            <i class="fa-regular fa-heart"></i>
+                        </a>
+
+                        <a href="">
+                            <i class="fa-solid fa-code-compare"></i>
+                        </a>
+                    </div>
+
+                    <img src="imags/19.webp" alt="product">
+
+                    <div class="product-info">
+
+                        <div class="product-text">
+                            <h3>قطرة ورد</h3>
+
+                            <p>
+                                نفحة أنثوية تنساب برقة، تجمع بين نعومة
+                                الزهر وفخامة العطر في كل قطرة.
+                            </p>
+                        </div>
+
+                        <div class="stars mb-2">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+
+                        <div class="price mb-2">
+                            <span>السعر 50$</span>
+                            <span>100$</span>
+                        </div>
+
+                        <button onclick="alert('تم اضافة المنتح للسلة')"
+                                type="button"
+                                class="btn btn-outline-secondary btnn">
+                            إضافة إلى السلة
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- المنتج 7 -->
+            <div class="col product mb-3 Jewelry">
+
+                <div class="card overflow-hidden">
+
+                    <div class="quick-icons">
+                        <a href="#quick-product" data-bs-toggle="modal">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+
+                        <a href="">
+                            <i class="fa-regular fa-heart"></i>
+                        </a>
+
+                        <a href="">
+                            <i class="fa-solid fa-code-compare"></i>
+                        </a>
+                    </div>
+
+                    <img src="imags/999.webp" alt="product">
+
+                    <div class="product-info">
+
+                        <div class="product-text">
+                            <h3>أنوثة ناعمة</h3>
+
+                            <p>
+                                اكتشفي من عنا أحدث التصاميم المختارة بعناية،
+                                لتمنحي إطلالتك لمسة جديدة من الأناقة والتميّز.
+                            </p>
+                        </div>
+
+                        <div class="stars mb-2">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+
+                        <div class="price mb-2">
+                            <span>السعر 50$</span>
+                            <span>100$</span>
+                        </div>
+
+                        <button onclick="alert('تم اضافة المنتح للسلة')"
+                                type="button"
+                                class="btn btn-outline-secondary btnn">
+                            إضافة إلى السلة
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- المنتج 8 -->
+            <div class="col product mb-3 clothes">
+
+                <div class="card overflow-hidden">
+
+                    <div class="quick-icons">
+                        <a href="#quick-product" data-bs-toggle="modal">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+
+                        <a href="">
+                            <i class="fa-regular fa-heart"></i>
+                        </a>
+
+                        <a href="">
+                            <i class="fa-solid fa-code-compare"></i>
+                        </a>
+                    </div>
+
+                    <img src="imags/w.jpg" alt="product">
+
+                    <div class="product-info">
+
+                        <div class="product-text">
+                            <h3>كلاسيك مود</h3>
+
+                            <p>
+                                لمسة من الرقي الكلاسيكي بتصميم عصري أنيق،
+                                قطعة تجمع بين البساطة والفخامة.
+                            </p>
+                        </div>
+
+                        <div class="stars mb-2">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+
+                        <div class="price mb-2">
+                            <span>السعر 50$</span>
+                            <span>100$</span>
+                        </div>
+
+                        <button onclick="alert('تم اضافة المنتح للسلة')"
+                                type="button"
+                                class="btn btn-outline-secondary btnn">
+                            إضافة إلى السلة
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- المنتج 9 -->
+            <div class="col product mb-3 Bags">
+
+                <div class="card overflow-hidden">
+
+                    <div class="quick-icons">
+                        <a href="#quick-product" data-bs-toggle="modal">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+
+                        <a href="">
+                            <i class="fa-regular fa-heart"></i>
+                        </a>
+
+                        <a href="">
+                            <i class="fa-solid fa-code-compare"></i>
+                        </a>
+                    </div>
+
+                    <img src="imags/k.webp" alt="product">
+
+                    <div class="product-info">
+
+                        <div class="product-text">
+                            <h3>فخامة القدم</h3>
+
+                            <p>
+                                تصميم يجمع بين الراحة والرقي،
+                                ليمنح قدميك لمسة من الأناقة في كل مناسبة.
+                            </p>
+                        </div>
+
+                        <div class="stars mb-2">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+
+                        <div class="price mb-2">
+                            <span>السعر 50$</span>
+                            <span>100$</span>
+                        </div>
+
+                        <button onclick="alert('تم اضافة المنتح للسلة')"
+                                type="button"
+                                class="btn btn-outline-secondary btnn">
+                            إضافة إلى السلة
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- المنتج 10 -->
+            <div class="col product mb-3 clothes">
+
+                <div class="card overflow-hidden">
+
+                    <div class="quick-icons">
+                        <a href="#quick-product" data-bs-toggle="modal">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+
+                        <a href="">
+                            <i class="fa-regular fa-heart"></i>
+                        </a>
+
+                        <a href="">
+                            <i class="fa-solid fa-code-compare"></i>
+                        </a>
+                    </div>
+
+                    <img src="imags/kk.webp" alt="product">
+
+                    <div class="product-info">
+
+                        <div class="product-text">
+                            <h3>ستايل سوشيال</h3>
+
+                            <p>
+                                لإطلالة تخطف الأنظار وتواكب الترند،
+                                خلي أناقتك تحكي عنك وين ما تكون.
+                            </p>
+                        </div>
+
+                        <div class="stars mb-2">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+
+                        <div class="price mb-2">
+                            <span>السعر 50$</span>
+                            <span>100$</span>
+                        </div>
+
+                        <button onclick="alert('تم اضافة المنتح للسلة')"
+                                type="button"
+                                class="btn btn-outline-secondary btnn">
+                            إضافة إلى السلة
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- المنتج 11 -->
+            <div class="col product mb-3 Bags">
+
+                <div class="card overflow-hidden">
+
+                    <div class="quick-icons">
+                        <a href="#quick-product" data-bs-toggle="modal">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+
+                        <a href="">
+                            <i class="fa-regular fa-heart"></i>
+                        </a>
+
+                        <a href="">
+                            <i class="fa-solid fa-code-compare"></i>
+                        </a>
+                    </div>
+
+                    <img src="imags/kkkkk.webp" alt="product">
+
+                    <div class="product-info">
+
+                        <div class="product-text">
+                            <h3>خُطى واثقة</h3>
+
+                            <p>
+                                صُمم ليمنحك الثبات والأناقة في كل خطوة،
+                                لأن الثقة تبدأ من الأرض التي تمشين عليها.
+                            </p>
+                        </div>
+
+                        <div class="stars mb-2">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+
+                        <div class="price mb-2">
+                            <span>السعر 50$</span>
+                            <span>100$</span>
+                        </div>
+
+                        <button onclick="alert('تم اضافة المنتح للسلة')"
+                                type="button"
+                                class="btn btn-outline-secondary btnn">
+                            إضافة إلى السلة
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- المنتج 12 -->
+            <div class="col product mb-3 Jewelry">
+
+                <div class="card overflow-hidden">
+
+                    <div class="quick-icons">
+                        <a href="#quick-product" data-bs-toggle="modal">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+
+                        <a href="">
+                            <i class="fa-regular fa-heart"></i>
+                        </a>
+
+                        <a href="">
+                            <i class="fa-solid fa-code-compare"></i>
+                        </a>
+                    </div>
+
+                    <img src="imags/15.webp" alt="product">
+
+                    <div class="product-info">
+
+                        <div class="product-text">
+                            <h3>ليل وعود</h3>
+
+                            <p>
+                                عطر شرقي دافئ، يأسر الحواس بنفحات العود
+                                الفاخر ولمسة من غموض المساء.
+                            </p>
+                        </div>
+
+                        <div class="stars mb-2">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+
+                        <div class="price mb-2">
+                            <span>السعر 50$</span>
+                            <span>100$</span>
+                        </div>
+
+                        <button onclick="alert('تم اضافة المنتح للسلة')"
+                                type="button"
+                                class="btn btn-outline-secondary btnn">
+                            إضافة إلى السلة
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
     </div>
-  </section>
+
+</section>
 
 
 
@@ -730,7 +1026,7 @@
                 <a href=""><i class="fa-solid fa-code-compare"></i></a>
 
               </div>
-              <img height="200px" width="200px" src="imags/ww.jpg" alt="product">
+              <img  src="imags/ww.jpg" alt="product">
               <div class="product-info">
                 <h3>إطلالة ساحرة </h3>
                 <p>فستان سهرة قصير بلمسة أنثوية أنيقة وتصميم يخطف الأنظار، مناسب للحفلات والسهرات.</p>
@@ -756,7 +1052,7 @@
                 <a href=""><i class="fa-solid fa-code-compare"></i></a>
 
               </div>
-              <img height="200px" width="200px" src="imags/jj.webp" alt="product">
+              <img  src="imags/jj.webp" alt="product">
               <div class="product-info">
                 <h3>أجمل الفساتين </h3>
                 <p>أحدث فساتين السهرة القصيرة بتصاميم عصرية وأناقة فريدة، مثالية للمناسبات الخاصة.</p>
@@ -782,7 +1078,7 @@
                 <a href=""><i class="fa-solid fa-code-compare"></i></a>
 
               </div>
-              <img height="200px" width="200px" src="imags/www.jpg" alt="product">
+              <img  src="imags/www.jpg" alt="product">
               <div class="product-info">
                 <h3>أناقتك تبدأ من هنا</h3>
                 <p>تميزي بإطلالة راقية مع فستان سهرة قصير يجمع بين البساطة والجاذبية.</p>
@@ -808,7 +1104,7 @@
                 <a href=""><i class="fa-solid fa-code-compare"></i></a>
 
               </div>
-              <img height="200px" width="200px" src="imags/rrrr.webp" alt="product">
+              <img  src="imags/rrrr.webp" alt="product">
               <div class="product-info">
                 <h3>لمسة أنوثة لا تقاوم</h3>
                 <p>تصاميم قصيرة أنيقة لفساتين السهرة تضيف لمسة من الرقي والجمال لكل مناسبة.</p>
@@ -837,7 +1133,7 @@
                 <a href=""><i class="fa-solid fa-code-compare"></i></a>
 
               </div>
-              <img height="200px" width="200px" src="imags/jjj.jpg" alt="product">
+              <img  src="imags/jjj.jpg" alt="product">
               <div class="product-info">
                 <h3>الاختيار المثالي </h3>
                 <p>فستان قصير بتفاصيل فاخرة، يمنحك حضوراً لافتاً في أي سهرة. يليق بك</p>
@@ -866,7 +1162,7 @@
                 <a href=""><i class="fa-solid fa-code-compare"></i></a>
 
               </div>
-              <img height="200px" width="200px" src="imags/r.webp" alt="product">
+              <img  src="imags/r.webp" alt="product">
               <div class="product-info">
                 <h3>جاذبية بكل خطوة</h3>
                 <p>أناقة مميزة بتصميم قصير عصري يعكس ذوقك الرفيع في فساتين السهرة.</p>
@@ -895,7 +1191,7 @@
                 <a href=""><i class="fa-solid fa-code-compare"></i></a>
 
               </div>
-              <img height="200px" width="200px" src="imags/44.jpg" alt="product">
+              <img  src="imags/44.jpg" alt="product">
               <div class="product-info">
                 <h3>فخامة التفاصيل</h3>
                 <p>فستان سهرة قصير بتطريز ناعم وقصة مثالية لأجواء المناسبات الراقية.</p>
@@ -924,7 +1220,7 @@
                 <a href=""><i class="fa-solid fa-code-compare"></i></a>
 
               </div>
-              <img height="200px" width="200px" src="imags/hh.webp" alt="product">
+              <img  src="imags/hh.webp" alt="product">
               <div class="product-info">
                 <h3>كوني نجمة السهرة</h3>
                 <p>اختاري فستان سهرة قصير بلمسات ساحرة لتتألقي في كل حفلة.للافراح والمناسبات</p>

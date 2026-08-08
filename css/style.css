@@ -338,6 +338,136 @@
  .card {
    background-color: rgba(255, 255, 255, 0.795);
  }
+/* =========================
+   Product Cards - Mobile
+   ========================= */
+
+@media (max-width: 767.98px) {
+
+    .all-products .product {
+        display: flex;
+    }
+
+    .all-products .product .card {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .all-products .product .card > img {
+        width: 100%;
+        height: 200px !important;
+        object-fit: cover;
+        flex-shrink: 0;
+    }
+
+    .all-products .product .product-info {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+    }
+
+    .all-products .product .product-text {
+        min-height: 105px;
+    }
+
+    .all-products .product .product-text h3 {
+        margin-bottom: 8px;
+    }
+
+    .all-products .product .product-text p {
+        margin-bottom: 0;
+    }
+
+    .all-products .product .stars {
+        margin-top: auto;
+    }
+
+    .all-products .product .btnn {
+        width: 100%;
+        white-space: nowrap;
+    }
+
+}
+
+
+ 
+
+
+ /* =========================================
+   توحيد كروت قسم special على الموبايل فقط
+   ========================================= */
+
+@media (max-width: 767.98px) {
+
+  /* الكروت داخل قسم special فقط */
+  .special .row {
+    align-items: stretch;
+  }
+
+  .special .col.product {
+    display: flex;
+    margin-bottom: 15px !important;
+  }
+
+  .special .col.product .card {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* توحيد حجم صور الكروت */
+  .special .col.product .card > img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+  }
+
+  /* محتوى الكرت */
+  .special .product-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* توحيد مساحة العنوان */
+  .special .product-info h3 {
+    min-height: 48px;
+    margin-bottom: 8px;
+  }
+
+  /* توحيد مساحة الوصف */
+  .special .product-info p {
+    min-height: 66px;
+    margin-bottom: 10px;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  /* النجوم */
+  .special .product-info .stars {
+    min-height: 24px;
+    margin-bottom: 8px !important;
+  }
+
+  /* السعر */
+  .special .product-info .price {
+    min-height: 30px;
+    margin-bottom: 10px !important;
+  }
+
+  /* الزر يبقى بأسفل جميع الكروت */
+  .special .product-info .btnn {
+    margin-top: auto;
+    white-space: nowrap;
+  }
+
+}
 
  /* start ads */
  .section-title {
@@ -354,6 +484,64 @@
 
 
  }
+
+ @media (max-width: 767.98px) {
+
+    /* الكرت داخل قسم أحدث الفساتين فقط */
+    .nex-products .swiper-slide {
+        height: auto;
+        display: flex;
+    }
+
+    .nex-products .swiper-slide .card {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* توحيد الصور */
+    .nex-products .swiper-slide .card > img {
+        width: 100% !important;
+        height: 200px !important;
+        object-fit: cover;
+        display: block;
+    }
+
+    /* محتوى الكرت */
+    .nex-products .swiper-slide .product-info {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+    }
+
+    /* توحيد مساحة العنوان والوصف */
+    .nex-products .swiper-slide .product-info h3 {
+        min-height: 45px;
+        margin-bottom: 8px;
+    }
+
+    .nex-products .swiper-slide .product-info p {
+        min-height: 72px;
+        margin-bottom: 10px;
+    }
+
+    /* النجوم */
+    .nex-products .swiper-slide .stars {
+        min-height: 24px;
+    }
+
+    /* السعر */
+    .nex-products .swiper-slide .price {
+        min-height: 30px;
+    }
+
+    /* الزر */
+    .nex-products .swiper-slide .btnn {
+        width: 100%;
+        white-space: nowrap;
+        margin-top: auto;
+    }
+}
 
  .ads {
    background-color: #19385c0a;
@@ -459,7 +647,7 @@
   bottom: 100px !important;
   display: flex !important;
   flex-direction:column !important ;
-  right: -140px;
+  right: -120px;
   gap: 10px;
 
   
@@ -482,6 +670,40 @@
   border-radius: 10px;
   box-shadow: 7px 7px 7px #244f869d;
  }
+
+ @media (max-width: 768px) {
+
+  .carousel-imges {
+    position: static !important;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+  }
+
+  .img-slider {
+    width: 65px !important;
+    height: 65px !important;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .carousel-inner img {
+    width: 100% !important;
+    height: auto;
+  }
+
+
+  @media (max-width: 768px){
+    .my-img{
+      display: block;
+      margin: 0 auto;
+
+    }
+  }
+}
 
  /* start bunner */
  .bunner{
