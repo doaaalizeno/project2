@@ -130,7 +130,7 @@
 
  .product-info h3 {
    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-   font-size: 22px;
+   font-size: 20px;
    font-weight: bold;
  }
 
@@ -338,6 +338,53 @@
  .card {
    background-color: rgba(255, 255, 255, 0.795);
  }
+ .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+
+
+
+
+/* =========================
+   Slider أحدث المنتجات فقط
+========================= */
+
+.products-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.products-slider {
+    flex: 1;
+    overflow: hidden;
+}
+
+.products-prev,
+.products-next {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background: #333;
+    color: white;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.products-prev:hover,
+.products-next:hover {
+    opacity: 0.8;
+}
+
+
+
+
+
 /* =========================
    Product Cards - Mobile
    ========================= */
@@ -795,3 +842,47 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   left: 0;
  }
  
+
+
+ .product-hidden {
+    display: none !important;
+}
+
+
+
+/* تعديل الكروت على اللابتوب والشاشات الكبيرة فقط */
+@media (min-width: 769px) {
+
+  .nex-products .swiper-slide {
+    height: auto !important;
+  }
+
+  .nex-products .swiper-slide .card {
+    height: 100%;
+    min-height: 470px;
+  }
+
+  .nex-products .product-info {
+    padding: 15px;
+  }
+
+  .nex-products .product-info h3 {
+    min-height: 30px;
+    margin-bottom: 10px;
+  }
+
+  .nex-products .product-info p {
+    min-height: 70px;
+    line-height: 1.7;
+    margin-bottom: 10px;
+  }
+
+  .nex-products .swiper-slide > .card > img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin: 0 auto;
+    display: block;
+  }
+
+}
