@@ -640,10 +640,10 @@
 
  /* start footer */
  footer {
-   background-color: rgba(0, 0, 0, 0.678);
+   background-color: rgba(0, 0, 0, 0.753);
    padding-top: 30px;
    margin-top: 50px;
-   background-image:url('../imags/ss.webp') ;
+   
    background-size:cover ;
    background-position: center;
    background-repeat: no-repeat;
@@ -655,6 +655,9 @@
    font-weight: bold;
    font-size: 22px;
    
+ }
+ .imgg{
+  border-radius: 6px;
  }
  .f1 p{
   color: rgba(151, 180, 204, 0.822);
